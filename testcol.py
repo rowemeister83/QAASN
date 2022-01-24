@@ -5,3 +5,9 @@ books.update({"The Left Hand of Darkness": "Ursula K Le Guin", "Dune": "Frank He
 print(books)
 
 print(books["The Left Hand of Darkness"])
+
+books.update({"The Waste lands": "Stephen King", "The Adjacent": "Christopher Priest"})
+print(books)
+
+print(books["The Adjacent"])
+
