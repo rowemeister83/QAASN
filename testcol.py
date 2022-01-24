@@ -6,10 +6,13 @@ print(books)
 
 print(books["The Left Hand of Darkness"])
 
-books.update({"The Waste lands": "Stephen King", "The Adjacent": "Christopher Priest"})
+books.update({"The Waste Lands": "Stephen King", "The Adjacent": "Christopher Priest"})
 print(books)
 
 print(books["The Adjacent"])
 
-books.pop("Charlie and the Chocolate Factory")
+books.update({"Rendezvous with Rama": "Arthur C. Clarke", "Roadside Picnic": "Boris and Arkady Strugatsky"})
 print(books)
+
+books.pop("Charlie and the Chocolate Factory")
+print(books) 
