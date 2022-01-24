@@ -7,7 +7,7 @@ letter = input("Pick any letter: ")
 if letter in('a', 'e', 'i', 'o', 'u'):
 	print("%s is a Vowel." % letter)
 elif letter == 'y':
-	print("Sometimes \'y\' is a vowel, sometimes \'y\' is a consonant.")
+	print("Sometimes \'y\' is a vowel, though sometimes \'y\' is a consonant.")
 else:
 	print("%s is a Consonant." % letter) 
 
@@ -20,9 +20,6 @@ if (num % 2) == 0:
 
 else:
    print("{0} is Odd".format(num))
-
-# Write a program that reads an integer from the user. Then your program should display a message indicating whether the integer is even or odd.
-
 
 # Write a program that determines the name of a shape from its number of sides. Read the number of sides from the user and then report the appropriate name as part of a meaningful message. Your program should support shapes with anywhere from 3 up to (and including) 10 sides. If a number of sides outside of this range is entered then your program should display an appropriate error message.
 
@@ -56,4 +53,15 @@ elif shapes == 9:
 
 elif shapes == 10:
     print(shapekernel[7])
+
+
+#Final tasl Most years have 365 days. However, the time required for the Earth to orbit the Sun is actually slightly more than that. As a result, an extra day, February 29, is included in some years to correct for this difference. Such years are referred to as leap years. The rules for determining whether or not a year is a leap year follow:
+#•Any year that is divisible by 400 is a leap year.
+#•Of the remaining years, any year that is divisible by 100 is not a leap year.
+#•Of the remaining years, any year that is divisible by 4 is a leap year.
+#•All other years are not leap years.
+#Write a program that reads a year from the user and displays a message indicating whether or not it is a leap year.
+
+
+
 
