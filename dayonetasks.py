@@ -10,3 +10,35 @@ print("Hello World")
 
 
 # Write a program that determines the name of a shape from its number of sides. Read the number of sides from the user and then report the appropriate name as part of a meaningful message. Your program should support shapes with anywhere from 3 up to (and including) 10 sides. If a number of sides outside of this range is entered then your program should display an appropriate error message.
+
+shapes = int(input("enter the amount of sides your shape has"))
+
+shapekernel = ["triangle", "square", "pentagon", "hexagon", "heptagon", "octagon", "enneagon", "decagon"]
+
+if shapes < 3 or shapes > 10:
+    print("Please run the python script with the playbutton - in the explorer window - THEN provide a number higher than 2, that's also lower than 11")
+
+elif shapes == 3:
+    print(shapekernel[0])
+
+elif shapes == 4:
+    print(shapekernel[1])
+
+elif shapes == 5:
+    print(shapekernel[2])
+
+elif shapes == 6:
+    print(shapekernel[3])
+
+elif shapes == 7:
+    print(shapekernel[4])
+
+elif shapes == 8:
+    print(shapekernel[5])
+
+elif shapes == 9:
+    print(shapekernel[6])
+
+elif shapes == 10:
+    print(shapekernel[7])
+
