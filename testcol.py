@@ -11,3 +11,5 @@ print(books)
 
 print(books["The Adjacent"])
 
+books.pop("Charlie and the Chocolate Factory")
+print(books)
