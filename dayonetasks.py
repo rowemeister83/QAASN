@@ -62,6 +62,18 @@ elif shapes == 10:
 #•All other years are not leap years.
 #Write a program that reads a year from the user and displays a message indicating whether or not it is a leap year.
 
+calendaryear = int(input("Enter the year: "))
 
+if (calendaryear%400==0):
+    print(calendaryear , "is a leap year")
+
+elif (calendaryear%100==0):
+    print(calendaryear , "isn't a leap year")
+
+elif (calendaryear%4==0):
+    print(calendaryear , "is a leap year")
+
+else:
+    print(calendaryear , "isn't a leap year")
 
 
