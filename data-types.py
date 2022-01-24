@@ -3,4 +3,13 @@ rogue2 = "is Obi Wan"
 rogue3 = "R2D2"
 bestpilot = "Redleader"
 
-print(rogue1,rogue2, "but the best pilot is", bestpilot, "and", rogue3, "is his bitch")
+print(rogue1,rogue2, "but the best pilot is", bestpilot, "and", rogue3, "is his overlord")
+
+name = "Pep Guardogiola"
+age = 3
+bark = True
+tweet = False
+
+print("My pet is called", name, ", He is", age, "years old.")
+print("Statement:", name, "barks.", bark)
+print("Statement:", name, "tweets.", tweet)
