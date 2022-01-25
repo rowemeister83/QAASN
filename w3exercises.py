@@ -6,18 +6,32 @@ for i in range(1500,2701):
 
 #exercise two
 
-celsius = int(input("Enter celsius temp:"))
+celsius = float(input("Enter celsius temp:"))
 fahrenheit = (celsius * 1.8) + 32
 print('%.0f celsius is %0.1f fahrenheit' %(celsius, fahrenheit))
-fahrenheit = int(input("Enter fahrenheit temp:"))
+fahrenheit = float(input("Enter fahrenheit temp:"))
 celsius = (fahrenheit - 32) / 1.8
 print('%.0f fahrenheit is %0.1f Celsius' %(fahrenheit, celsius))
 
 #exercise three
 
-
+#num1=int(input("pick a number, any number:")) 
+#num2= randint(1, 9)
+#while num1!= b:
+#
+#   num2= int(input("Now, choose between 1 to 9 : "))
+#print("-----output-------");
+#print("Entered number:",num1);
+#print("Random number:",num2);
 
 
 #exercise four
+
+for i in range(1, 10):
+    if(i>5):
+        i = 10 - i
+    for j in range(i):
+        print("*", end=" ")
+    print()
 
 
