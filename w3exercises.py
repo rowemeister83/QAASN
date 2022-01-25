@@ -34,4 +34,10 @@ for i in range(1, 10):
         print("*", end=" ")
     print()
 
+#exercise five
+
+st = input("Enter a random word: ")
+rev = st[::-1]
+print("your word, reversed, is: ", rev)
+
 
