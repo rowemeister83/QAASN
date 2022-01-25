@@ -1,6 +1,9 @@
 #1st task
 
 
+from unittest import result
+
+
 def max3(num1, num2, num3):
     if (num1 > num2 and num1 > num3):
         return num1
@@ -22,3 +25,13 @@ def find_sum(numbers_list):
 
 numbervar = [205, 11, 66, 1, 47, 19]
 print(find_sum(numbervar))
+
+
+#3rd task
+def multiplication(numberlisties):
+    result=1
+    for i in numberlisties:
+        result *= i
+    return result
+numberlisties = [20505, 203, 361, 6663, 8885]
+print(multiplication(numberlisties))
