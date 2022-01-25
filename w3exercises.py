@@ -15,16 +15,6 @@ print('%.0f fahrenheit is %0.1f Celsius' %(fahrenheit, celsius))
 
 #exercise three
 
-#num1=int(input("pick a number, any number:")) 
-#num2= randint(1, 9)
-#while num1!= b:
-#
-#   num2= int(input("Now, choose between 1 to 9 : "))
-#print("-----output-------");
-#print("Entered number:",num1);
-#print("Random number:",num2);
-
-
 #exercise four
 
 for i in range(1, 10):

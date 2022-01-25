@@ -35,3 +35,14 @@ def multiplication(numberlisties):
     return result
 numberlisties = [20505, 203, 361, 6663, 8885]
 print(multiplication(numberlisties))
+
+
+
+
+import random
+realnum=random.randint(1, 9)
+while(True):
+    num = int(input("pick a number, bro: "))
+    if(num == realnum):
+        break
+print("well done")
