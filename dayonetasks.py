@@ -77,3 +77,11 @@ else:
     print(calendaryear , "isn't a leap year")
 
 
+mark = int(input("Enter mark here: "))
+if mark <85:
+    if mark >=65 and mark <85:
+        print("pass")
+    else:
+        print("fail")
+else:
+    print("Distinction")
