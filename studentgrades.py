@@ -1,6 +1,3 @@
-from tokenize import Name
-
-
 class Student:
 
      def __init__(self, Name, TSCORE, age):
