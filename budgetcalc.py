@@ -1,67 +1,61 @@
-class Category:
-  def __init__(self, category): 
-        self.balance =[]
-        self.amount=0
-        self.category = category 
+import os
+
+class Budget:
+    
+    def __init__(self, name):
+        os.system('cls')
+        self.name = name
+        self.balance = 0
+
+    def deposit(self, amount):
+         self.balance = amount
+         
+         return (f"Your new balance is {self.balance} in {self.name} budget")
+    
+    def withdraw(self, amount):
+        if self.balance < amount:
+            print("********** Transaction Failed **********")
+            print("Insufficient funds")          
+            
+        else:
+            self.balance = self.balance - amount
+            result = ("********** Successful Transaction **********\n")
+            result += (f"Your new balance is {self.balance} in {self.name} budget")
+            
+            return result
+
+    def get_balance(self):
+        balance = (f"The balance for {self.name} is {self.balance}")
+        return balance
+    
+    def transfer(self, amount, category):
+        if self.name == category.name:
+            result = ("ERROR!\n")
+            result += ("You cannot transfer funds within the same category\n")
+            result += ("You can only transfer funds to another category")
+            return result
+        
+        else:
+            if self.balance < amount:
+                print("********** Transaction Failed **********")
+                print("Insufficient funds")
+            else:
+                self.balance -= amount
+                category.balance += amount
+            
+                trans_result = ("********** Successful Transaction **********\n")
+                trans_result += (f"The balance for the {self.name} budget is {self.balance}\n")
+                trans_result += (f"The balance for the {category.name} budget is {category.balance}")
+            
+                return trans_result
 
 
-  def check_funds(self,amount):
-    if self.amount< amount:
-      return False
-    else:
-      return True
+food = Budget("food")
+clothing = Budget("clothing")
+entertainment = Budget("entertainment")
 
-
-  def deposit(self,amount, description=""):
-    self.balance.append({"amount":amount,"description":description})
-    self.amount += amount
-
-
-  def withdraw(self,amount,description=""):
-    if self.check_funds(amount) ==True:
-      self.amount -=amount
-      self.balance.append({"amount":-amount,"description":description})
-      return True
-    else:
-      return False
-
-
-  def get_balance(self):
-    return self.amount
-
-  def __str__(self):
-    result=""
-    result+="*************Food*************"+"\n"
-    for transaction in self.balance:
-      amount=0
-      description=""
-      for key,value in transaction.items():
-          if key=="amount":
-            amount = value
-          elif key=="description":
-            description=value
-      if len(description)>23:
-        description=description[:23]
-      amount = str(format(float(amount),'.2f'))
-      if len(amount)>7:
-        amount= amount[:7] 
-      result+= description + str(amount).rjust(30-len(description))+"\n"
-    result+="Total: "+str(format(float(self.amount),'.2f'))
-    return result
-
-
-
-  def transfer(self,amount,category):
-    if self.check_funds(amount)==True:
-      self.amount-=amount
-      self.balance.append({"amount": -amount,"description":"Transfer to "+category.category})
-      category.balance.append({"amount": amount,"description": "Transfer from "+self.category})
-      return True
-    else:
-      return False
-
-
-def create_spend_chart(categories):
-    return "------complete ----"
-
-print()
+food.deposit (10000)
+clothing.deposit(5000)
+                 
+                 
+print(food.transfer(5000, food))
