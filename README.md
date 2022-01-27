@@ -1,3 +1,3 @@
 # QAASN
 
-This is a repo for the first day of python in the QA academy
+THIS IS A REPO FOR THE FIRST DAY OF PYTHON IN THE QA ACADEMY
