@@ -8,3 +8,6 @@ print(uppertext)
 openedfile = open("README.md", "w")
 openedfile.write(uppertext)
 openedfile.close()
+
+help(openedfile)
+
